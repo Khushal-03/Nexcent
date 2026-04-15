@@ -1,0 +1,253 @@
+/* Navigation Buttons */
+.log-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.log-btn button {
+  color: #4caf4f;
+  width: auto;
+  min-width: 100px;
+  height: auto;
+  padding: 8px 15px;
+  border: 1px solid #4caf4f;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.log-btn button:hover {
+  color: #fff;
+  background-color: #4caf4f;
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  color: #717171;
+  font-size: clamp(12px, 2vw, 16px);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.green-span {
+  color: #4caf4f;
+}
+
+@media (max-width: 576px) {
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  .hero-content .my-btn-hover{
+    min-width: 50%;
+  }
+  
+}
+.my-btn-hover {
+  background-color: #4caf4f;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-btn-hover:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 79, 0.3);
+}
+.our-client {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.our-client h2 {
+  font-size: clamp(20px, 5vw, 36px);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.our-client h6 {
+  font-size: clamp(12px, 2vw, 15px);
+  color: #717171;
+  margin: 0;
+}
+
+.client-slider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.client-slider img {
+  padding: clamp(10px, 2vw, 20px);
+  width: clamp(60px, 12vw, 100px);
+  height: auto;
+  object-fit: contain;
+}
+
+.client-slider .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Responsive Slider Settings */
+@media (max-width: 1200px) {
+  .client-slider img {
+    width: clamp(50px, 10vw, 80px);
+  }
+}
+
+@media (max-width: 768px) {
+  .our-client {
+    padding: 0 10px;
+  }
+
+  .our-client h2 {
+    font-size: clamp(18px, 4vw, 28px);
+  }
+
+  .our-client h6 {
+    font-size: clamp(11px, 1.8vw, 14px);
+  }
+
+  .client-slider img {
+    height: auto;
+  }
+
+  .client-slider img {
+    width: 72px;
+    padding: clamp(8px, 1.5vw, 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .our-client {
+    padding: 0 8px;
+  }
+
+  .our-client h2 {
+    font-size: clamp(16px, 3vw, 22px);
+  }
+
+  .our-client h6 {
+    font-size: 12px;
+  }
+
+  .client-slider img {
+    width: 70px;
+    margin: auto;
+  }
+}
+.community {
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+.card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: anchor-center;
+}
+
+.my-btn-2 {
+  margin-top: 12px;
+  color: black;
+  width: auto;
+  min-width: 120px;
+  transition: all 0.3s ease;
+}
+.my-btn-2:hover {
+  color: white;
+  background-color: #4caf4f;
+}
+
+/* Responsive Navigation */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+
+  .log-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+  }
+
+  .log-btn button {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .containt-con4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: anchor-center;
+  }
+
+  .containt-con4 h4,
+  p,
+  .my-btn-2 {
+    min-width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
